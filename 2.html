@@ -22,6 +22,9 @@
 			type="text/css" />
 		<link
 			rel="stylesheet"
+			href="./css/responsive.css" />
+		<link
+			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
 			crossorigin="anonymous"
@@ -56,8 +59,7 @@
 								><img src="img/logo-01.png"
 							/></a>
 						</div>
-						<form
-							class="d-none d-md-flex bg-white py-3 px-4 rounded-3 justify-content-between align-items-center">
+						<form>
 							<div>
 								<input
 									type="text"
@@ -71,6 +73,14 @@
 							</button>
 						</form>
 						<ul class="d-flex left-side-nav gap-3">
+							<li>
+								<button
+									type="submit"
+									id="searchBtn"
+									class="btn btn-default p-0 bg-transparent border-0">
+									<i class="fa-solid fa-magnifying-glass"></i>
+								</button>
+							</li>
 							<li>
 								<button
 									type="button"
@@ -116,8 +126,7 @@
 			<div class="container">
 				<div class="sections">
 					<div class="row">
-						<!-- class="col-sm-12 col-md-3 col-lg-2" -->
-						<div class="col-md-3 col-xs-6">
+						<div class="col-md-2 col-xs-6">
 							<div class="section one">
 								<div class="pic more">
 									<span>اسم القسم</span>
@@ -167,8 +176,7 @@
 								<div class="clearfix"></div>
 							</div>
 						</div>
-
-						<div class="col-md-3 col-xs-6">
+						<div class="col-md-2 col-xs-6">
 							<div class="section sco">
 								<div class="pic more">
 									<span>اسم القسم</span>
@@ -219,7 +227,7 @@
 							</div>
 						</div>
 
-						<div class="col-md-3 col-xs-6">
+						<div class="col-md-2 col-xs-6">
 							<div class="section thr">
 								<div class="pic more">
 									<span>اسم القسم</span>
@@ -269,8 +277,7 @@
 								<div class="clearfix"></div>
 							</div>
 						</div>
-
-						<div class="col-md-3 col-xs-6">
+						<div class="col-md-2 col-xs-6">
 							<div class="section four">
 								<div class="pic more">
 									<span>اسم القسم</span>
@@ -320,7 +327,110 @@
 								<div class="clearfix"></div>
 							</div>
 						</div>
+						<div class="col-md-2 col-xs-6">
+							<div class="section five">
+								<div class="pic more">
+									<span>اسم القسم</span>
+									<img
+										class="img-responsive"
+										src="img/1.png" />
+								</div>
+
+								<div class="summary">
+									<a class="more"> X</a>
+									<a href=""
+										><div class="Subject text-center">
+											<h4>اللغة العربية</h4>
+										</div></a
+									>
+									<a href=""
+										><div class="Subject text-center">
+											<h4>اللغة العربية</h4>
+										</div></a
+									>
+									<a href=""
+										><div class="Subject text-center">
+											<h4>اللغة العربية</h4>
+										</div></a
+									>
+									<a href=""
+										><div class="Subject text-center">
+											<h4>اللغة العربية</h4>
+										</div></a
+									>
+									<a href=""
+										><div class="Subject text-center">
+											<h4>اللغة العربية</h4>
+										</div></a
+									>
+									<a href=""
+										><div class="Subject text-center">
+											<h4>اللغة العربية</h4>
+										</div></a
+									>
+									<a href=""
+										><div class="Subject text-center">
+											<h4>اللغة العربية</h4>
+										</div></a
+									>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
 					</div>
+
+					<!-- <div class="row">
+						<div class="col-md-2 col-xs-6">
+							<div class="section one">
+								<div class="pic more">
+									<span>اسم القسم</span>
+									<img
+										class="img-responsive"
+										src="img/1.png" />
+								</div>
+
+								<div class="summary">
+									<a class="more"> X</a>
+									<a href=""
+										><div class="Subject text-center">
+											<h4>اللغة العربية</h4>
+										</div></a
+									>
+									<a href=""
+										><div class="Subject text-center">
+											<h4>اللغة العربية</h4>
+										</div></a
+									>
+									<a href=""
+										><div class="Subject text-center">
+											<h4>اللغة العربية</h4>
+										</div></a
+									>
+									<a href=""
+										><div class="Subject text-center">
+											<h4>اللغة العربية</h4>
+										</div></a
+									>
+									<a href=""
+										><div class="Subject text-center">
+											<h4>اللغة العربية</h4>
+										</div></a
+									>
+									<a href=""
+										><div class="Subject text-center">
+											<h4>اللغة العربية</h4>
+										</div></a
+									>
+									<a href=""
+										><div class="Subject text-center">
+											<h4>اللغة العربية</h4>
+										</div></a
+									>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div> -->
 				</div>
 			</div>
 		</div>
@@ -427,6 +537,7 @@
 
 		<script src="js/jquery.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<script src="./js/main.js"></script>
 		<script>
 			$(document).ready(function () {
 				$('.more').click(function () {
@@ -434,7 +545,13 @@
 					$(this).next('.summary').fadeToggle('slow', '');
 				});
 			});
+			$(document).ready(function () {
+				$('.pic').click(function () {
+					$(this).child;
+				});
+			});
 		</script>
+		<!-- <script src="./js/main.js"></script> -->
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
