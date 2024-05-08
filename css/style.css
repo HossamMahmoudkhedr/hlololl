@@ -226,6 +226,12 @@ form input::placeholder {
 	margin-top: 10px;
 }
 
+.sections.add-grid {
+	display: grid;
+	gap: 2rem;
+	grid-template-columns: repeat(6, 1fr);
+	justify-content: center !important;
+}
 .row {
 	justify-content: center;
 }
@@ -435,7 +441,8 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
-	.sections {
+	.sections.add-grid {
+		grid-template-columns: repeat(4, 1fr);
 		grid-template-columns: repeat(2, 1fr);
 	}
 	#searchBtn {
@@ -481,9 +488,9 @@ footer a:hover {
 }
 
 @media (min-width: 768px) and (max-width: 990px) {
-	/* .sections {
-		grid-template-columns: repeat(3, 1fr);
-	} */
+	.sections.add-grid {
+		grid-template-columns: repeat(4, 1fr);
+	}
 	.summary {
 		width: 77vw;
 	}
