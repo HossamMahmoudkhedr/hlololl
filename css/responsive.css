@@ -7,10 +7,8 @@
 	.hidden-content {
 		width: 90vw;
 	}
-	.Subject {
-		width: 27%;
-	}
-	.thr .summary:before,
+
+	/* .thr .summary:before,
 	.one .summary:before,
 	.thr .summary:before,
 	.four .summary:before {
@@ -19,7 +17,7 @@
 	.sco .summary,
 	.four .summary {
 		right: 3vw !important;
-	}
+	} */
 
 	.filter {
 		display: block;
@@ -127,9 +125,9 @@
 }
 
 @media (min-width: 499px) and (max-width: 767px) {
-	.Subject {
+	/* .Subject {
 		width: 22%;
-	}
+	} */
 	/* .summary {
 		width: 91vw;
 	}
