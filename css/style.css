@@ -312,9 +312,16 @@ form input::placeholder {
 	-moz-transition: all 0.5s ease-in-out;
 	-o-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
-	margin-left: 10px;
 	overflow: hidden;
 	position: relative;
+}
+.filters.custom-filters {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+.filter.custom-filter {
+	width: 50%;
 }
 .filter:hover {
 	background: var(--blue);
