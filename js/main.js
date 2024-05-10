@@ -10,7 +10,6 @@ const black = document.querySelector('.black');
 const closeIcon = document.querySelectorAll('.closeIcon');
 
 const showItem = () => {
-	console.log('clicked');
 	form.classList.toggle('showItem');
 };
 
