@@ -315,14 +315,6 @@ form input::placeholder {
 	overflow: hidden;
 	position: relative;
 }
-.filters.custom-filters {
-	display: flex;
-	align-items: center;
-	gap: 1rem;
-}
-.filter.custom-filter {
-	width: 50%;
-}
 .filter:hover {
 	background: var(--blue);
 	color: #fff;
@@ -559,6 +551,14 @@ footer a:hover {
 		left: 5;
 		top: 5px;
 		font-size: 20px;
+	}
+	.filters.custom-filters {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+	}
+	.filter.custom-filter {
+		width: 50%;
 	}
 	.top .drop {
 		width: auto;
