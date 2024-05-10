@@ -303,7 +303,17 @@ form input::placeholder {
 	margin: 0;
 }
 /**********/
+.custom-filters {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
 .filters {
+	display: flex;
+
+	gap: 1rem;
+}
+.filters.custom-filters {
 	display: flex;
 	justify-content: space-between;
 }
@@ -311,13 +321,17 @@ form input::placeholder {
 	font-size: 16px;
 	border: 1px solid var(--blue);
 	border-radius: 30px;
-	padding: 2px 10px;
+	padding: 0.3rem 1rem;
 	-webkit-transition: all 0.5s ease-in-out;
 	-moz-transition: all 0.5s ease-in-out;
 	-o-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
 	overflow: hidden;
 	position: relative;
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+	align-items: center;
 }
 .filter:hover {
 	background: var(--blue);
@@ -534,6 +548,15 @@ footer a:hover {
 	footer div p {
 		margin: 0 0 0 0 !important;
 	}
+	.filters {
+		flex-direction: column;
+	}
+
+	.filters.custom-filters {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
 }
 @media (max-width: 500px) {
 	.sections .col-xs-6,
@@ -545,25 +568,16 @@ footer a:hover {
 		width: 90vw;
 	}
 
-	.filter {
-		display: block;
-		margin-bottom: 10px;
-		line-height: 2;
-	}
 	.filter i {
-		position: absolute;
 		left: 5;
 		top: 5px;
 		font-size: 20px;
 	}
-	.filters.custom-filters {
-		display: flex;
-		align-items: center;
-		gap: 1rem;
+
+	.filters.custom-filters .filter.custom-filter:first-child {
+		width: 80%;
 	}
-	.filter.custom-filter {
-		width: 50%;
-	}
+
 	.top .drop {
 		width: auto;
 	}
